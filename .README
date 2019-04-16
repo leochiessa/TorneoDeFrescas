@@ -1,0 +1,24 @@
+Maven es una herramienta de desarrollo de software cuyo objetivo es simplificar los procesos de compilación y
+generar archivos ejecutables a partir del código fuente. Basado en XML.
+
+Project Object Model, es un archivo en el cual se describen las características del proyecto a construir,
+las dependencias de otros módulos y componentes; y el orden de construcción de los elementos.
+
+ArcheType es una plantilla en base a la cual pueden construirse proyectos genéricos, o bien servir como modelo
+al comienzo para luego modificarlos.
+
+ArtifactId es el identificador del proyecto.
+
+Goals:
+Clean borra archivos y directorios creados por Maven durante el proceso de compilacion y construcción.
+Package toma el código compilado y lo empaqueta en un archivo de salida con el formato de distribución preestablecido.
+Install instala el paquete en el repositorio local para ser utilizado como dependencia en los otros proyectos localmente.
+Compile compila el codigo fuente del proyecto.
+
+Scopes:
+Compile es el alcance por defecto para todas las dependencias que no tengan otro especificado. Estarán disponibles
+en todas las tareas de compilaión y se propagarán hacia los proyectos dependientes.
+Provide se usa para marcar las dependencias que deberán proveerse en tiempo de ejecución, por ejemplo por JKD o por un contenedor.
+Runtime indica que las dependencias con este alcance serán requeridas en tiempo de ejecución pero no son necesarias para la compilación.
+Test se usa para marcar dependencias que nunca serán requeridas, pero sí son usadas para propositos de prueba.
+System es igual que Provided pero, si o si, debemos especificar la ruta de la dependencia. Si se usa en otra máquina con una ruta distinta dará error.
