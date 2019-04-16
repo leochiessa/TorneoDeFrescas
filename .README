@@ -1,5 +1,7 @@
-Maven es una herramienta de desarrollo de software cuyo objetivo es simplificar los procesos de compilación y
-generar archivos ejecutables a partir del código fuente. Basado en XML.
+Maven
+Gestor de dependencias.
+Administrador de ciclos de vida.
+Su objetivo es simplificar los procesos de compilación y generar archivos ejecutables a partir del código fuente. Basado en XML.
 
 Project Object Model, es un archivo en el cual se describen las características del proyecto a construir,
 las dependencias de otros módulos y componentes; y el orden de construcción de los elementos.
